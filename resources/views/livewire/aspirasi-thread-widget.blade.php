@@ -9,7 +9,7 @@
                         : ($aspirasi->user?->avatar_url
                             ? asset('storage/' . $aspirasi->user->avatar_url)
                             : 'https://ui-avatars.com/api/?name=' . urlencode($aspirasi->user?->name)) }}"
-                        class="w-8 h-8 rounded-full">
+                        class="w-8 h-8 rounded-full object-cover overflow-hidden">
                     <span class="font-semibold">
                         {{ $aspirasi->is_anonymous ? 'Anonim' : $aspirasi->user?->name }}
                     </span>
