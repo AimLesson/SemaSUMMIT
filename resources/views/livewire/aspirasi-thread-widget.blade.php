@@ -21,7 +21,7 @@
                 {{-- Gambar Aspirasi --}}
                 @if ($aspirasi->image)
                     <div class="flex justify-center">
-                        <img src="{{ asset('storage/' . $aspirasi->image) }}" class="mt-2 rounded-lg max-w-xs">
+                        <img src="{{ asset('storage/' . $aspirasi->image) }}" class="mt-2 rounded-lg max-w-sm object-cover overflow-hidden">
                     </div>
                 @endif
 
