@@ -26,7 +26,7 @@
                 @endif
 
                 {{-- Konten Aspirasi --}}
-                <div class="p-2 bg-gray-50 dark:bg-gray-900 rounded mt-2">
+                <div class="p-2 bg-gray-50 dark:bg-gray-700 rounded mt-2">
                     <div class="prose max-w-none text-md text-justify text-black dark:text-white">
                         {!! str($aspirasi->content)->sanitizeHtml() !!}
                     </div>
@@ -138,7 +138,7 @@
 
                                     <div class="ml-4 mt-3 space-y-2">
                                         @foreach ($displayBalasan as $balasan)
-                                            <div class="p-2 bg-gray-50 dark:bg-gray-900 rounded">
+                                            <div class="p-2 bg-gray-50 dark:bg-gray-700 rounded">
                                                 <div class="flex items-center justify-between mb-1">
                                                     <div class="flex items-center gap-2">
                                                         <img src="{{ $balasan->is_anonymous
