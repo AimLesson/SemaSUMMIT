@@ -29,7 +29,7 @@ class SocialiteController extends Controller
                 $provider . '_id' => $response->getId(),
                 'name'            => $response->getName(),
                 'email'           => $response->getEmail(),
-                'password'        => '',
+                'password'        => bcrypt($response->getEmail()),
             ]);
             $user->assignRole('user');
         }
