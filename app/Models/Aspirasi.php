@@ -31,13 +31,4 @@ class Aspirasi extends Model
         'is_approved' => 'boolean',
     ];
 
-    protected static function boot()
-    {
-        parent::boot();
-
-        static::creating(function ($model) {
-            $model->is_approved = false;
-        });
-    }
-
 }
