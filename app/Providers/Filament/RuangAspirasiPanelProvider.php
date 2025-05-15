@@ -36,7 +36,7 @@ class RuangAspirasiPanelProvider extends PanelProvider
             ->colors([
                 'primary' => Color::Amber,
             ])->topNavigation()->defaultThemeMode(ThemeMode::Light)->darkMode(false)
-            ->brandLogo(asset('logo.png'))->brandLogoHeight('3rem')->favicon(asset('logo2.png'))
+            ->brandLogo(asset('logo.png'))->brandLogoHeight('3rem')->favicon(asset('logo2.png'))->darkModeBrandLogo(asset('darklogo.png'))
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
             ->pages([
