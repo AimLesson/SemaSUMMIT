@@ -14,6 +14,7 @@ use Filament\Http\Middleware\Authenticate;
 use Jeffgreco13\FilamentBreezy\BreezyCore;
 use Hasnayeen\Themes\Http\Middleware\SetTheme;
 use Illuminate\Session\Middleware\StartSession;
+use Devonab\FilamentEasyFooter\EasyFooterPlugin;
 use Illuminate\Cookie\Middleware\EncryptCookies;
 use Filament\Http\Middleware\AuthenticateSession;
 use BezhanSalleh\FilamentShield\FilamentShieldPlugin;
@@ -70,7 +71,8 @@ class RuangAspirasiPanelProvider extends PanelProvider
                         navigationGroup: 'Settings', // Sets the navigation group for the My Profile page (default = null)
                         hasAvatars: true, // Enables the avatar upload form component (default = false)
                         slug: 'myprofile' // Sets the slug for the profile page (default = 'my-profile')
-                    )
+                    ),
+                EasyFooterPlugin::make()->withSentence('developed by gms'),
             ])
             ->authMiddleware([
                 Authenticate::class,
