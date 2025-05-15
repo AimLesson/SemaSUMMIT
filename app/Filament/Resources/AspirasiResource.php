@@ -53,6 +53,10 @@ class AspirasiResource extends Resource
             Forms\Components\Toggle::make('is_anonymous')
                 ->label('Anonim?')
                 ->inline(),
+
+            Forms\Components\Toggle::make('is_approved')
+                ->label('Publikasi?')
+                ->inline(),
         ]);
     }
 

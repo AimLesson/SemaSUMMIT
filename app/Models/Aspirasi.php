@@ -36,7 +36,7 @@ class Aspirasi extends Model
         parent::boot();
 
         static::creating(function ($model) {
-            $model->is_approved = true;
+            $model->is_approved = false;
         });
     }
 
