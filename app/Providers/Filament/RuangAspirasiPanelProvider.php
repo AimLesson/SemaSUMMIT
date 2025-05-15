@@ -6,6 +6,7 @@ use Filament\Pages;
 use Filament\Panel;
 use Filament\Widgets;
 use Filament\PanelProvider;
+use Filament\Enums\ThemeMode;
 use Filament\Support\Colors\Color;
 use Hasnayeen\Themes\ThemesPlugin;
 use App\Livewire\AspirasiThreadWidget;
@@ -34,8 +35,7 @@ class RuangAspirasiPanelProvider extends PanelProvider
             ->login()
             ->colors([
                 'primary' => Color::Amber,
-            ])->topNavigation()->darkMode(false)
-            // ->brandName('Ruang Aspirasi')
+            ])->topNavigation()->defaultThemeMode(ThemeMode::Light)->darkMode(false)
             ->brandLogo(asset('logo.png'))->brandLogoHeight('3rem')->favicon(asset('logo2.png'))
             ->discoverResources(in: app_path('Filament/Resources'), for: 'App\\Filament\\Resources')
             ->discoverPages(in: app_path('Filament/Pages'), for: 'App\\Filament\\Pages')
