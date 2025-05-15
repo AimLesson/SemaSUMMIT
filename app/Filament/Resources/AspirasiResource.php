@@ -132,11 +132,11 @@ class AspirasiResource extends Resource
         ];
     }
 
-    public static function getGlobalSearchResultActions(Model $record): array
-{
-    return [
-        Action::make('view')
-            ->url(static::getUrl('view', ['record' => $record])),
-    ];
-}
+    // public static function getGlobalSearchResultActions(Model $record): array
+    // {
+    //     return [
+    //         Action::make('view')
+    //             ->url(static::getUrl('view', ['record' => $record])),
+    //     ];
+    // }
 }
