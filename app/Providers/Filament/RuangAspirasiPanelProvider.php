@@ -72,7 +72,17 @@ class RuangAspirasiPanelProvider extends PanelProvider
                         hasAvatars: true, // Enables the avatar upload form component (default = false)
                         slug: 'myprofile' // Sets the slug for the profile page (default = 'my-profile')
                     ),
-                EasyFooterPlugin::make()->withSentence('developed by gms')->withFooterPosition('footer')->withBorder(),
+                EasyFooterPlugin::make()
+                    ->withSentence('developed by gms')
+                    ->withFooterPosition('footer')
+                    ->withBorder()
+                    ->withLinks([
+                        [
+                            'label' => 'Instagram',
+                            'url' => 'https://www.instagram.com/gerson.m5/',
+                            'icon' => 'heroicon-o-camera',
+                        ],
+                    ]),
             ])
             ->authMiddleware([
                 Authenticate::class,
